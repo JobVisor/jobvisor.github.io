@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — JobVisor</title>
+<meta name="description" content="Privacy Policy for the JobVisor Chrome extension.">
+<link rel="icon" type="image/png" href="icons/icon32.png">
+<style>
+:root{--blue:#2B6CC4;--blue-dark:#1F5197;--green:#7BC95E;--green-deep:#3B6D11;--ink:#16202E;--slate:#5A6675;--line:#E4E8EE;--paper:#FFFFFF;--mist:#F5F7FA;--amber-bg:#FEF6E7;--amber-tx:#7A5212}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:var(--ink);background:var(--paper);line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+a{color:var(--blue)}
+nav{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);z-index:10}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px;max-width:1080px;margin:0 auto;padding:0 24px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:-.02em;text-decoration:none}
+.brand img{width:30px;height:30px;border-radius:7px}
+.b-job{color:var(--green)}
+.b-visor{color:var(--blue)}
+.back{font-size:14px;font-weight:600;color:var(--blue);text-decoration:none}
+header.page{padding:54px 0 22px}
+h1{font-size:34px;letter-spacing:-.02em;margin-bottom:8px}
+.updated{color:var(--slate);font-size:14px;margin-bottom:8px}
+.callout{background:var(--amber-bg);border:1px solid #F1DDB4;border-radius:12px;padding:18px 20px;margin:26px 0;color:#5C3D08}
+.callout b{color:#3D2905}
+main{padding-bottom:70px}
+h2{font-size:20px;margin:32px 0 10px;letter-spacing:-.01em}
+p{margin-bottom:14px;color:#2C3744}
+ul{margin:0 0 14px 22px;color:#2C3744}
+li{margin-bottom:7px}
+footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--slate);font-size:13px}
+footer a{font-weight:600}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:4px}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-in">
+    <a class="brand" href="index.html"><img src="icons/icon128.png" alt="JobVisor logo"><span><span class="b-job">Job</span><span class="b-visor">Visor</span></span></a>
+    <a class="back" href="index.html">← Back to home</a>
+  </div>
+</nav>
+
+<header class="page">
+  <div class="wrap">
+    <h1>Privacy Policy</h1>
+    <div class="updated">Last updated: June 18, 2026</div>
+    <p>This Privacy Policy explains what data the JobVisor browser extension and website ("the Service") handle, how it is used, and the choices you have. JobVisor is built for job seekers — particularly international students — and privacy is core to how it works.</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <div class="callout">
+      <b>The short version.</b> Your resume stays on your own device. We have no user accounts, we never sell or share your data, and we don't track you across the web. When you run an analysis, the job text and your resume are sent securely to be processed and the result is returned — we don't keep them on our servers.
+    </div>
+
+    <h2>1. What we handle</h2>
+    <ul>
+      <li><b>Your resume</b> — the file you upload and the text extracted from it. Stored locally in your browser's extension storage, on your own device — not on our servers.</li>
+      <li><b>Job posting content</b> — the text of the LinkedIn job you're viewing, read from the page so it can be analyzed.</li>
+      <li><b>An anonymous install ID</b> — a random identifier created when you install the extension. It contains no personal information and isn't linked to your identity; it exists only to enforce the free daily usage limit.</li>
+      <li><b>Your goal &amp; streak data</b> — the daily target you set and which jobs you marked "applied." Stored locally on your device only.</li>
+    </ul>
+
+    <h2>2. How your data is used</h2>
+    <p>To produce an analysis, the job description and the text of your resume are sent over a secure connection to our processing server (a Cloudflare Worker), which forwards them to our AI provider (Anthropic) to generate the sponsorship insights, resume match score, and recommendations. The result is returned to your browser and shown in the overlay.</p>
+    <p>The anonymous install ID is sent with each request solely so the server can count how many free analyses you've used that day.</p>
+
+    <h2>3. What is stored, and where</h2>
+    <ul>
+      <li><b>On your device:</b> your resume, cached analyses, your daily goal, your streak, and your applied-job list. You can delete all of it by removing your resume in the extension or by uninstalling the extension.</li>
+      <li><b>On our server:</b> nothing about you is kept long-term. The only thing stored is a short-lived daily counter tied to your anonymous install ID, which is deleted automatically within about 48 hours. We do <b>not</b> store your resume, the job text, or the analysis on our servers.</li>
+      <li><b>With our AI provider:</b> (Anthropic) the request is processed to generate your analysis. Per Anthropic's policies, data sent through its API is not used to train its models and is retained only briefly for safety and abuse monitoring.</li>
+    </ul>
+
+    <h2>4. What we never do</h2>
+    <ul>
+      <li>We do not sell, rent, or share your personal data with anyone for marketing.</li>
+      <li>We do not show ads or use advertising trackers.</li>
+      <li>We do not track your browsing across other websites.</li>
+      <li>We do not require an account, email, or login to use the free Service.</li>
+    </ul>
+
+    <h2>5. Service providers</h2>
+    <p>We rely on a small number of providers to run the Service: Cloudflare (hosts the processing server) and Anthropic (performs the AI analysis). They process data only to deliver the Service and under their own privacy and security commitments.</p>
+
+    <h2>6. Your choices and control</h2>
+    <ul>
+      <li>Remove your resume any time from the extension popup — this deletes it from your device.</li>
+      <li>Uninstall the extension to remove all locally stored data.</li>
+      <li>Because we don't hold your personal data on our servers, there is nothing for us to retain once you stop using the Service.</li>
+    </ul>
+
+    <h2>7. Children</h2>
+    <p>JobVisor is intended for job seekers and is not directed at children under 16. We do not knowingly collect data from children.</p>
+
+    <h2>8. Changes to this policy</h2>
+    <p>We may update this Privacy Policy as the Service evolves. Material changes will be reflected here with a new "Last updated" date. Continued use after an update means you accept the revised policy.</p>
+
+    <h2>9. Contact</h2>
+    <p>Questions about your privacy or this policy? Email <a href="mailto:support@jobvisor.net">support@jobvisor.net</a>.</p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    JobVisor · <a href="index.html">Home</a> · <a href="terms.html">Terms of Use</a> · <a href="mailto:support@jobvisor.net">Contact</a>
+  </div>
+</footer>
+</body>
+</html>
